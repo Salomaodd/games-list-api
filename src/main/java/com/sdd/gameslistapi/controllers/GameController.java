@@ -14,7 +14,7 @@ import java.util.List;
 public class GameController {
 
     @Autowired
-    private  GameService gameService;
+    private GameService gameService;
 
     @GetMapping
     public List<GameDTO> getAllGames() {
