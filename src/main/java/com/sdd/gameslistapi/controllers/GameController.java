@@ -1,7 +1,7 @@
 package com.sdd.gameslistapi.controllers;
 
 import com.sdd.gameslistapi.gamedto.GameDTO;
-import com.sdd.gameslistapi.gamedto.GameListDTO;
+import com.sdd.gameslistapi.gamedto.GameMinDTO;
 import com.sdd.gameslistapi.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +20,7 @@ public class GameController {
     private GameService gameService;
 
     @GetMapping
-    public List<GameListDTO> getAllGames() {
+    public List<GameMinDTO> getAllGames() {
         return gameService.getAllGames();
     }
 

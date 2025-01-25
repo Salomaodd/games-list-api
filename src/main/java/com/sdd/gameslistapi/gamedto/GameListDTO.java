@@ -1,43 +1,25 @@
 package com.sdd.gameslistapi.gamedto;
 
-import com.sdd.gameslistapi.entities.Game;
+import com.sdd.gameslistapi.entities.GameList;
 
 public class GameListDTO {
 
     private Long id;
-    private String title;
-    private Integer year;
-    private String imgUrl;
-    private String shortDescription;
+    private String name;
 
     public GameListDTO() {
     }
 
-    public GameListDTO(Game game) {
-        id = game.getId();
-        title = game.getTitle();
-        year = game.getYear();
-        imgUrl = game.getImgUrl();
-        shortDescription = game.getShortDescription();
+    public GameListDTO(GameList gameList) {
+        id = gameList.getId();
+        name = gameList.getName();
     }
 
     public Long getId() {
         return id;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public Integer getYear() {
-        return year;
-    }
-
-    public String getImgUrl() {
-        return imgUrl;
-    }
-
-    public String getShortDescription() {
-        return shortDescription;
+    public String getName() {
+        return name;
     }
 }
